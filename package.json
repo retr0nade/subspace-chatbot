@@ -18,7 +18,7 @@
     "@apollo/client": "^3.10.8",
     "@nhost/nhost-js": "^3.3.0",
     "@nhost/react": "^3.11.1",
-    "apollo-client": "^2.6.10",
+    "@nhost/react-apollo": "^18.0.1",
     "classnames": "^2.5.1",
     "date-fns": "^3.6.0",
     "graphql": "^16.9.0",
@@ -45,4 +45,3 @@
     "typescript": "^5.5.3"
   }
 }
-

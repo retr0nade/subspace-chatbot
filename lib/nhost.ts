@@ -10,7 +10,7 @@ function buildServiceUrl(baseUrl: string | undefined, path: string): string | un
 
 export function getNhostClient(): NhostClient {
   if (!nhostSingleton) {
-    const base = process.env.NEXT_PUBLIC_NHOST_BACKEND_URL;
+    const base = process.env.NEXT_PUBLIC_NHOST_BACKEND_URL || 'http://localhost:1337';
     nhostSingleton = new NhostClient({
       authUrl: buildServiceUrl(base, '/v1/auth'),
       storageUrl: buildServiceUrl(base, '/v1/storage'),
